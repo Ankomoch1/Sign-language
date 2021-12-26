@@ -61,7 +61,7 @@
         const prediction = await model.predict(webcam.canvas);
 
         if( prediction[0].probability.toFixed(2) > 0.80){
-        
+            
             window.location.href = "./A.html/";
 
         }else if( prediction[1].probability.toFixed(2) > 0.80){
@@ -69,7 +69,7 @@
             window.location.href = "./B.html/";
 
         }else if( prediction[2].probability.toFixed(2) > 0.80){
-            
+        
             window.location.href = "./C.html/";
 
 
