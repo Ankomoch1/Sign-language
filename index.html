@@ -61,15 +61,15 @@
         const prediction = await model.predict(webcam.canvas);
 
         if( prediction[0].probability.toFixed(2) > 0.80){
-            lsbelContainer.childNodes[0].innerHTML = "A"
+            
             window.location.href = "./A.html/";
 
         }else if( prediction[1].probability.toFixed(2) > 0.80){
-            lsbelContainer.childNodes[1].innerHTML = "B"
+        
             window.location.href = "./B.html/";
 
         }else if( prediction[2].probability.toFixed(2) > 0.80){
-            lsbelContainer.childNodes[2].innerHTML = "C"
+            
             window.location.href = "./C.html/";
 
 
